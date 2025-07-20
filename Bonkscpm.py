@@ -178,7 +178,7 @@ def animated_intro(console):
     title = "[bold cyan]🚀 BonksCPM2 Tool[/bold cyan]"
     subtitles = [
         "🔒 Secure. ⚙️ Powerful. 🎮 Game-On!",
-        "👑 Powered by Chan",
+        "👑 Powered by Bonks",
         f"📡 Connecting to servers..."
     ]
     with Live(console=console, refresh_per_second=10) as live:
