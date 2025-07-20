@@ -606,7 +606,7 @@ if __name__ == "__main__":
                 console.print("[bold green]SUCCESSFUL.[/bold green]")
                 console.print("==================================")
                 console.print(f"[bold red]! INFO[/bold red]: All cars have been transferred to your CPM2 account.")
-                console.print("Login to the game with your CPM2 credentials to view them."      
+                console.print("Login to the game with your CPM2 credentials to view them.")     
                 sleep(2)
                 continue
             else: continue
