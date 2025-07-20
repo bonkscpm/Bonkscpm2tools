@@ -81,7 +81,7 @@ def banner(console):
     # Static Display After Animation
     console.print("\n")
     console.print(gradient_text(box_lines, gradient_colors), justify="center")
-    console.print("[bold green]♕ ChanXReyno2[/bold green]: Car Parking Multiplayer 2 Hacking Tool.", justify="center")
+    console.print("[bold green]♕ Bonkscpm[/bold green]: Car Parking Multiplayer 2 Hacking Tool.", justify="center")
     console.print(f"[bold green]♕ Telegram[/bold green]: [bold blue]@{__CHANNEL_USERNAME__}[/bold blue] | [bold blue]@{__GROUP_USERNAME__}[/bold blue]", justify="center")
     console.print("[bold red]==================================================[/bold red]", justify="center")
     console.print("[bold yellow]! Note[/bold yellow]: Logout from the game before using this tool!", justify="center")
