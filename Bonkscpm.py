@@ -609,8 +609,7 @@ if __name__ == "__main__":
                 console.print("Login to the game with your CPM2 credentials to view them.")
             else:      
                 sleep(2)
-                    continue 
-                
+                    continue
             else: continue
             break
         break
