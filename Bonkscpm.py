@@ -600,10 +600,11 @@ if __name__ == "__main__":
                     sleep(5)
                     continue
                 console.print(f"[bold yellow][INFO][/bold yellow]: Found {len(cpm1_cars)} cars in CPM1.")
-                console.print("[bold cyan][%] Transferring to CPM2...[/bold cyan]: ", end=None)
-                cpm2.set_cars(cpm1_cars)
+console.print(f"[bold yellow][INFO][/bold yellow]: Found {len(cpm1_cars)} cars in CPM1.")
+console.print("[bold cyan][%] Transferring to CPM2...[/bold cyan]: ", end=None)
+cpm2.set_cars(cpm1_cars)
 
-                console.print("[bold green]SUCCESSFUL.[/bold green]")
+console.print("[bold green]SUCCESSFUL![/bold green]")
 console.print("===================================")
 console.print("[bold red]! INFO[/bold red]: All cars have been transferred to your CPM2 account.")
 console.print("Login to the game with your CPM2 credentials to view them.")
