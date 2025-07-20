@@ -254,8 +254,7 @@ if __name__ == "__main__":
                 "Unlock All Cars Siren ~ 7K",
                 "Unlock 20 Slots ~ 7K",  # 17
                 "Unlock Air Suspension All Cars ~ 6K",  # 18
-                "Generate VIP Account Money + King Rank + 300 Coins ~ 30K", 
-                "test",     
+                "Generate VIP Account Money + King Rank + 300 Coins ~ 30K",     
                
 ]
 
@@ -561,55 +560,7 @@ if __name__ == "__main__":
                     console.print(f"[bold red]! INFO[/bold red]: In order to tweak this account with CPMNuker")
                     console.print("you must sign-in to the game using this account.")
                     sleep(5)
-                    continue
-            elif service == 20:  # Transfer Cars
-                console.print("[bold cyan][!] Transferring Cars from CPM1 to CPM2[/bold cyan]")
-                # Ask for CPM1 credentials
-                console.print("[bold yellow][CPM1 EMAIL][/bold yellow]: ", end="")
-                cpm1_email = input()
-                console.print("[bold yellow][CPM1 PASSWORD][/bold yellow]: ", end="")
-                cpm1_password = getpass("")
-
-                cpm1 = CPMDataFetcher('cpm1')
-                cpm1.set_credentials(cpm1_email, cpm1_password)
-
-                console.print("[bold cyan][%] Logging in to CPM1[/bold cyan]: ", end=None)
-                if not cpm1.login():
-                    console.print("[bold red]❌ Failed to login to CPM1[/bold red]")
-                    sleep(5)
-                    continue
-                # Ask for CPM2 credentials
-                console.print("[bold yellow][CPM2 EMAIL][/bold yellow]: ", end="")
-                cpm2_email = input()
-                console.print("[bold yellow][CPM2 PASSWORD][/bold yellow]: ", end="")
-                cpm2_password = getpass("")
-
-                cpm2 = CPMNuker('cpm2')
-                cpm2.set_credentials(cpm2_email, cpm2_password)
-
-                console.print("[bold cyan][%] Logging in to CPM2[/bold cyan]: ", end=None)
-                if not cpm2.login():
-                    console.print("[bold red]❌ Failed to login to CPM2[/bold red]")
-                    sleep(5)
-                    continue
-                console.print("[bold cyan][%] Fetching cars from CPM1[/bold cyan]: ", end=None)
-                cpm1_cars = cpm1.get_all_cars()
-
-                if not cpm1_cars:
-                    console.print("[bold red]⚠️ No cars found in CPM1 account[/bold red]")
-                    sleep(5)
-                    continue
-                console.print(f"[bold yellow][INFO][/bold yellow]: Found {len(cpm1_cars)} cars in CPM1.")
-console.print(f"[bold yellow][INFO][/bold yellow]: Found {len(cpm1_cars)} cars in CPM1.")
-console.print("[bold cyan][%] Transferring to CPM2...[/bold cyan]: ", end=None)
-cpm2.set_cars(cpm1_cars)
-
-console.print("[bold green]SUCCESSFUL![/bold green]")
-console.print("===================================")
-console.print("[bold red]! INFO[/bold red]: All cars have been transferred to your CPM2 account.")
-console.print("Login to the game with your CPM2 credentials to view them.")
-sleep(2)
-continue
+                    continue                                 
             else: continue
             break
         break
