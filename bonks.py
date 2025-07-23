@@ -2,7 +2,7 @@ import requests
 from time import sleep
 import urllib.parse
 
-BASE_URL: str = "https://admincpm.io/KrishPV/api"
+BASE_URL: str = "https://admincpm.io/KrishXNew/api"
 
 class bonkscpm:
 
